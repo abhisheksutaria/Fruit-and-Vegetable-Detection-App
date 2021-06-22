@@ -39,7 +39,7 @@ def about():
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    target = os.path.join(APP_ROOT, 'static/')
+    target = os.path.join(APP_ROOT, 'test_images/')
     print(target)
 
     if not os.path.isdir(target):
@@ -52,7 +52,7 @@ def upload():
         print(destination)
         file.save(destination)	
 
-    newDes = os.path.join('static/'+filename)
+    newDes = os.path.join('test_images/'+filename)
     
     train_categories = ['Apple', 'Banana', 'Beetroot', 'Cauliflower', 'Coconut', 'Corn', 'Eggplant',
                         'Guava', 'Kiwi', 'Lemon', 'Litchi', 'Onion', 'Orange', 'Pineapple', 'Pomegranate', 
