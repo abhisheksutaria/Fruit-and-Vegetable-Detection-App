@@ -54,10 +54,10 @@ def upload():
 
     newDes = os.path.join('test_images/'+filename)
     
-    train_categories = []
+    train_categories = ['Apple', 'Banana', 'Beetroot', 'Cauliflower', 'Coconut', 'Corn', 'Eggplant',
+                        'Guava', 'Kiwi', 'Lemon', 'Litchi', 'Onion', 'Orange', 'Pineapple', 'Pomegranate', 
+                        'Potato', 'Starfruit', 'Strawberry', 'Tomato', 'Watermelon']
     # train_samples = []
-    for i in os.listdir("./data/merged/train"):
-        train_categories.append(i)
   
     # model.load_weights("finalmodel.hdf5")
     img = Image.open(newDes)
