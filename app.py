@@ -19,7 +19,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 @app.route('/')
 def index():
-    return render_template('home.html')
+    return render_template('index.html')
 
 
 @app.route('/about')
