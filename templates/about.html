@@ -1,0 +1,68 @@
+
+    <div class="jumbutton text-center">
+        <h1>Fruit Detected: {{results[0]}}</h1>
+        <h2><u><strong>Top Recipes:</strong></u></h2>
+        <ol type="1">
+            <li>{{n1}}</li>
+            <form action= {{y1}} method="POST" target="_blank">
+                <button class="btn btn-success btn-lg float-right" type="submit">YouTube Tutorial</button>
+            </form>
+            <li>{{n2}}</li>
+            <form action= {{y2}} method="POST" target="_blank">
+                <button class="btn btn-success btn-lg float-right" type="submit">YouTube Tutorial</button>
+            </form>
+            <li>{{n3}}</li>
+            <form action={{y3}} method="POST" target="_blank">
+                <button class="btn btn-success btn-lg float-right" type="submit">Youtube Tutorial</button>
+            </form>
+        </ol>
+        <h3><u><strong> Specifications(Per Serving/100gms)</strong></u></h3>
+        <ol type="1">
+            <li><u><strong>Calorie Count:</strong></u>  {{calorie}} cals</li>
+            <li><u><strong>Fat:</strong></u>  {{fat}} gms</li>
+            <li><u><strong>Proteins:</strong></u>  {{protein}}gms </li>
+            <li><u><strong>Carbohydrates:</strong></u>  {{carb}}gms</li>
+            <li><u><strong>Fibre: </strong></u>  {{fibre}}gms</li>
+        </ol>
+    </div>
+    <style>
+        li{
+            margin-left:100px ;
+        }
+        h1{
+            text-align: center;
+            font-size: 70px;
+            color: black;
+        }
+        h2{
+            margin-top: 150px;
+            margin-left: 100px;
+            font-size: 40px;
+        }
+        h3{
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 40px;
+        }
+        body {
+            background-color: rgb(235, 235, 155);
+        }
+        li{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button{
+            position: relative;
+            bottom: 50px;
+            margin-left: 400px;
+            margin-top: -20px;
+            background-color: #da3131; /* Green */
+            border: 2px solid #0f0202; ;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 30px;
+            width: 30%;
+            height: 60px;
+        }
+    </style>

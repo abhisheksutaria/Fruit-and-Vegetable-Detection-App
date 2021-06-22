@@ -1,0 +1,68 @@
+<div class="jumbotron text-center">
+        <h1>"Vegetable Scanner App"</h1>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style> 
+        h1{
+                    text-align: center;
+                    margin-top: 3vh; 
+                    font-size:  7.5vw ; }
+        img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5vh ;
+                opacity: 0.5;
+                width: 90%;
+                height: 60% ;
+            }
+        input[type="file"]  {
+            background-color: #60d364; /* Green */
+            border: 2px solid #114113; ;
+            color: rgb(5, 5, 5);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-top: 4vh;
+            margin-left: auto;
+            width: 80vw ;
+            height: 10vh ;
+            margin-right: auto;
+            font-size: 150% ;
+            border-radius: 30px ;
+               } 
+        input[type="submit"]  {
+            background-color: #60d364; /* Green */
+            border: 2px solid #114113; ;
+            color: rgb(5, 5, 5);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-top: 3vh;
+            margin-left: auto;
+            width: 80vw ;
+            height: 10vh ;
+            margin-right: auto;
+            font-size: 175% ;
+            border-radius: 30px ;
+               } 
+        form{
+            text-align: center;
+        }
+        button :hover {
+            background-color: #52ff58; /* Green */
+            color: rgb(178, 250, 196);
+            }
+        </style> 
+        
+        <body style="background-color:rgb(241, 250, 118);"></body>
+        <img src="http://clipart-library.com/img1/1119938.jpg">
+        <form id = "upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+            <input type="file" capture="camera" accept="image/*" id="cameraInput" name="file" >
+            <!-- <input type="file" name="file" accept="image/*" multiple> -->
+            <input type="submit" value="Start Scanning"> 
+        </form>
+        <!-- <button>Start Scanning <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput"> </button> -->
+    </div>
