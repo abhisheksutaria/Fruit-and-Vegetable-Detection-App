@@ -58,7 +58,7 @@
         </style> 
         
         <body style="background-color:rgb(241, 250, 118);"></body>
-        <img src="http://clipart-library.com/img1/1119938.jpg">
+        <img src="{{ url_for('static', filename='fruit.jpg') }}" alt="FRUIT">
         <form id = "upload-form" action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
             <input type="file" capture="camera" accept="image/*" id="cameraInput" name="file" >
             <!-- <input type="file" name="file" accept="image/*" multiple> -->
